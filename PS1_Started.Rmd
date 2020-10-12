@@ -13,7 +13,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 ### Group Member 1: Jacob Humble
 ### Group Member 2: Tricia McMahon
-### Group Member 3: Your name here
+### Group Member 3: Max Thompson
 
 
 
@@ -194,6 +194,9 @@ The coefficient for the single regression is different than the coefficient from
 **Answer:**
 ```
 adjY <- out$Y-B2*out$V2
+Reg3 <- lm(adjY ~ V1, data=out)
+summary (Reg3)
+The estimate of beta_1 is not biased, as both are around 3.
 
 ```
 
