@@ -207,7 +207,8 @@ plotted<-ggplot(out, aes(V1, y = value, color = variable)) +
     geom_point(aes(y = Y, col = "Y")) + 
     geom_point(aes(y = adjY, col = "adjY"))+
     geom_smooth(method='lm', aes(y = Y, col = "Y"))+
-    geom_smooth(method='lm', aes(y = adjY, col = "Y"))
+    geom_smooth(method='lm', aes(y = adjY, col = "Y")) + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
+panel.background = element_blank(), axis.line = element_line(colour = "black"))
 
 plotted
 
